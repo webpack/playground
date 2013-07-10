@@ -1,0 +1,18 @@
+.container-fluid
+	.row-fluid
+		.span6
+			ul.nav.nav-tabs.files
+				li: a.create-new-file(href="#") Create new file
+			.tab-content
+				.tab-pane.active
+					.editor
+		.span6
+			p: button.btn.btn-primary.compile Compile
+			ul.nav.nav-tabs
+				li.active: a(href="#stats", data-toggle="tab") Stats
+				li: a(href="#iframe", data-toggle="tab") Run
+			.tab-content
+				.tab-pane.active#stats
+					pre: code.stats
+				.tab-pane#iframe
+					iframe(seamless="true")
