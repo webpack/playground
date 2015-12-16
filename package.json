@@ -6,6 +6,7 @@
 	"dependencies": {
 		"webpack": "0.11.x",
 		"webpack-dev-server": "0.11.x",
+		"enhanced-resolve":"0.5.15",
 		"jade-loader": "0.5.x",
 		"json-loader": "0.5.x",
 		"url-loader": "0.5.x",
@@ -29,7 +30,8 @@
 		"start": "webpack-dev-server -d --colors --content-page index.html"
 	},
 	"engines": {
-		"node":  ">=0.1.30"
+		"node":  ">=0.1.30",
+		"npm":"2.x"
 	},
 	"homepage": "http://github.com/webpack/playground"
 }
