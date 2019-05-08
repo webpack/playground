@@ -9,7 +9,7 @@ var filesystem = exports.data = {
 			"": true,
 			"lib": {
 				"": true,
-				"runtime.js": new Buffer(require("raw!jade-loader/node_modules/jade/lib/runtime.js"), "utf-8")
+				"runtime.js": new Buffer(require("raw!jade/lib/runtime.js"), "utf-8")
 			},
 			"web_modules": {
 				"": true,
@@ -35,8 +35,8 @@ var filesystem = exports.data = {
 };
 
 
-var MemoryOutputFilesystem = require("webpack/lib/MemoryOutputFilesystem");
-var MemoryInputFilesystem  = require("enhanced-resolve/lib/MemoryInputFilesystem");
+var MemoryOutputFilesystem = require("webpack/lib/MemoryOutputFileSystem");
+var MemoryInputFilesystem  = require("enhanced-resolve/lib/MemoryInputFileSystem");
 
 var inFs = new MemoryInputFilesystem(filesystem);
 var outFs = new MemoryOutputFilesystem(filesystem);
